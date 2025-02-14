@@ -3,10 +3,22 @@
 # 매개변수로 주어졌을 때, 양꼬치 n인분과 음료수 k개를 먹었다면 총얼마를 지불해야 
 # 하는지 return 하도록 solution 함수를 완성해보세요.
 
-#def solution(n, k):
-    #answer = (12000 * n) + (2000 * k)
+    
+def solution(n, k):
+    
     # 양꼬치 인분수 :n
     # 음료수 개수 : k
+            # 양꼬치 총액    음료 총액    서비스 음료수 가격 
+    answer = n * 12000 + k * 2000 - (n//10*2000)
+    
+    return answer
+
+print(solution(10, 3)) #124000
+print(solution(64, 6))
+    
+    
+    
+    
     #if n >= 10
 
     #for h in solution 
@@ -15,5 +27,3 @@
     #else:
        
     #return answer    
-#print(solution(10, 3)) #124000
-#print(solution(64, 60)) #768000
