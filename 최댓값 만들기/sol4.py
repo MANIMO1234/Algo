@@ -1,5 +1,6 @@
 
-# 버블정렬
+# 버블sort, 존나 어려워 흑 
+# 그냥  sort를 쓰자
 
 
 def solution(numbers):
