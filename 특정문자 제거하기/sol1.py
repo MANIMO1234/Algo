@@ -6,11 +6,12 @@ def solution(my_string, letter):
 
     result = []
     for word in my_string:
-        if word  not in 'letter':
+        if word != letter:
             result. append(word)
+    return ''.join(result)  
 
- print(solution('abcdef', 'f'))
- print(solution(''.join('abcdef','f'))
+print(solution("abcdef", "f"))  # "abcde"
+print(solution("BCBdbe", "B"))  # "Cdbe"
 
 
 
